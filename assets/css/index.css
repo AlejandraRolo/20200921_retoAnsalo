@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* con esta propiedad establecemos que el objeto no afecte su tamaño independiente de las propiedades que se definan, por ejemplo un padding*/
+    list-style: none;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.border-container{
+    box-shadow: 0 0 8px #333;
+}
+
+.border-inferior{
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #03071E; 
+}
+
+.bg-main {
+    color: #85144B;
+}
+
+.bg-footer{
+    background: #aaa;
+    font-size: 20px;
+    color: #85144B;
+}
+
+.btn-redondo .row button {
+	width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50px;
+    outline:none;
+    /*Estilos por defecto*/
+    background: #ffc107;
+    border: 1px solid #85144B;
+    color: #001F3F;
+}
+
+.btn-redondo .row button:hover {
+    background: #e0a800;
+}
+
+/* TEMA OSCURO */
+
+.contenedor-prin.dark .bg-main {
+    background: rgba(0,32,63,1);
+    background: linear-gradient(top, rgba(0,32,63,1) 0%, rgba(0,10,20,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,32,63,1) 0%, rgba(0,10,20,1) 100%);
+    color: #fff;
+}
+
+.contenedor-prin.dark .bg-footer{
+    background: #9d0207d8;
+    color: #fff;
+}
+  
+.contenedor-prin.dark .btn-redondo .row button {
+    background: lightgray;
+    border: 1px solid #fff;
+    color: #9d0207d8;
+}
+
+.contenedor-prin.dark .btn-redondo .row button:hover {
+    background: rgb(230, 229, 229);
+}
+
+.contenedor-prin.dark .border-container{
+    box-shadow: 0 0 8px #fff;
+}
+
+.contenedor-prin.dark .border-inferior{
+    border-bottom: 3px solid #F1FAEE;
+}
+
+
+/* TEMA RETRO */
+
+.contenedor-prin.retro .bg-main {
+    background: rgb(2, 4, 7);
+    background: linear-gradient(top, rgba(2, 4, 7) 0%, rgba(2, 4, 7, 0.74) 100%);
+    background: linear-gradient(to bottom, rgba(2, 4, 7) 0%, rgba(2, 4, 7, 0.74) 100%);
+    color: #fff;
+    border: 4px solid #fff;
+}
+
+.contenedor-prin.retro .bg-retro {
+    background: rgb(255, 174, 0);
+    background: linear-gradient(top, rgba(255, 174, 0) 0%, rgba(184,147,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 174, 0) 0%, rgba(184,147,0,1) 100%);
+    font-family: 'Caveat', cursive;
+}
+
+.contenedor-prin.retro .bg-retro div h3{
+    font-size: 50px;
+}
+
+.contenedor-prin.retro .bg-footer{
+    background: #457B9D;
+    color: #fff;
+    border-radius: 100px 15px;
+    border: 2px solid #fff;
+}
+
+.contenedor-prin.retro .btn-redondo .row button {
+    background: #fff;
+    border: 1px solid #85144b;
+    color: #457B9D;
+}
+
+.contenedor-prin.retro .btn-redondo .row button:hover {
+    background: rgb(230, 229, 229);
+}
+
+.contenedor-prin.retro .border-container{
+    box-shadow: 0 0 10px #fff;
+    border-radius: 15px 100px;
+}
+
+.contenedor-prin.retro .border-inferior{
+    border-bottom: 3px solid #85144b;
+}

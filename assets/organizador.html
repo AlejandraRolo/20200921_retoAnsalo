@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>organizador</title>
+    <meta name="authors" content="Yazmín Alejandra Rodriguez">
+  
+    <link rel="styleSheet" href="./css/bootstrap_4.5.2.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="styleSheet" href="./css/index.css" type="text/css">
+</head>
+
+<body>
+    
+    <main>
+        <div id="contenedor" class="container border-container rounded my-5 p-3">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-6 d-flex flex-column align-items-center mb-2">
+                    <div class="card text-center align-items-center p-3" style="width: 18rem;">
+                        <h3 class="text-center">Crea una Lista de Tareas</h3>
+                        <img class="img-icon" src="./images/userperfil.png" class="card-img-top" alt="usuarioencomputador">
+                        <div class="card-body">
+                            <h4 class="card-title">Bienvenido(a)</h4>
+                            <h5 id="usrvalido" class="card-text color-letra"></h5>
+                            <div class="my-5 pb-3">
+                                <form id="frmCategoria">
+                                    <div class="form-row">
+                                        <div class="form-group col-sm-12">
+                                            <input id="categoria" type="text" class="form-control" placeholder="Agregar Categoría">
+                                        </div>
+                                    </div> 
+                                    <div class="col d-flex justify-content-end"><button type="submit" class="btn btn-dark">Crear</button></div>
+                                </form>
+                            </div>
+                            <div class="contenedorCategorias">
+                                <ul id="listaCategoria"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-sm-6"> <!-- align-self-center -->
+                    <div class="col d-flex justify-content-end border-inferior mb-3 pb-3"><a class="btn btn-warning" href="./login.html">Login>></a></div>
+                    <h3 class="text-center">Lista de Tareas</h3>
+                    <form id="frmTareas" class="form-inline my-2 my-lg-0">
+                        <select id="selCategoria" class="custom-select mr-sm-2 my-2">
+                            <option selected disabled value="">- Seleccione Categoría -</option>
+                        </select>
+                        <input id="tarea" class="form-control mr-sm-2" type="text" placeholder="Tarea">
+                        <button class="btn my-2 my-sm-0 btn btn-dark" type="submit">Agregar Tarea</button> <!--btn-outline-success: clase nativa de boostrap-->
+                    </form>
+                    <div class="table-responsive-sm table-responsive-md table-responsive-lg border rounded border-dark my-5">
+                        <table class="table table-admin">
+                            <thead class="tabla-encabezado">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Categoría</th>
+                                    <th scope="col">Tarea</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tablaCategoriaTarea">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="teclado" class="my-5 mr-3">
+                        <div class="row d-flex justify-content-between mb-3">
+                            <button type="button" class="btn btn-secondary p-4">1</button>
+                            <button type="button" class="btn btn-secondary p-4">2</button>
+                            <button type="button" class="btn btn-secondary p-4">3</button>
+                            <button type="button" class="btn btn-secondary p-4">4</button>
+                            <button type="button" class="btn btn-secondary p-4">5</button>
+                            <button type="button" class="btn btn-secondary p-4">6</button>
+                            <button type="button" class="btn btn-secondary p-4">7</button>
+                            <button type="button" class="btn btn-secondary p-4">8</button>
+                            <button type="button" class="btn btn-secondary p-4">9</button>
+                            <button type="button" class="btn btn-secondary p-4">0</button>
+                        </div>
+                        <div class="row d-flex justify-content-between mb-3">
+                            <button type="button" class="btn btn-secondary p-4">Q</button>
+                            <button type="button" class="btn btn-secondary p-4">W</button>
+                            <button type="button" class="btn btn-secondary p-4">E</button>
+                            <button type="button" class="btn btn-secondary p-4">R</button>
+                            <button type="button" class="btn btn-secondary p-4">T</button>
+                            <button type="button" class="btn btn-secondary p-4">Y</button>
+                            <button type="button" class="btn btn-secondary p-4">U</button>
+                            <button type="button" class="btn btn-secondary p-4">I</button>
+                            <button type="button" class="btn btn-secondary p-4">O</button>
+                            <button type="button" class="btn btn-secondary p-4">P</button>
+                        </div>
+                        <div class="row d-flex justify-content-between mb-3">
+                            <button type="button" class="btn btn-secondary p-4">A</button>
+                            <button type="button" class="btn btn-secondary p-4">S</button>
+                            <button type="button" class="btn btn-secondary p-4">D</button>
+                            <button type="button" class="btn btn-secondary p-4">F</button>
+                            <button type="button" class="btn btn-secondary p-4">G</button>
+                            <button type="button" class="btn btn-secondary p-4">H</button>
+                            <button type="button" class="btn btn-secondary p-4">J</button>
+                            <button type="button" class="btn btn-secondary p-4">K</button>
+                            <button type="button" class="btn btn-secondary p-4">L</button>
+                            <button type="button" class="btn btn-secondary p-4">Ñ</button>
+                        </div>
+                        <div class="row d-flex justify-content-between mb-3">
+                            <button type="button" class="btn btn-secondary p-4">Z</button>
+                            <button type="button" class="btn btn-secondary p-4">X</button>
+                            <button type="button" class="btn btn-secondary p-4">C</button>
+                            <button type="button" class="btn btn-secondary p-4">V</button>
+                            <button type="button" class="btn btn-secondary p-4">B</button>
+                            <button type="button" class="btn btn-secondary p-4">N</button>
+                            <button type="button" class="btn btn-secondary p-4">M</button>
+                        </div>
+                        <div class="row d-flex justify-content-between mb-3">
+                            <div class="col-8">
+                                <button type="button" class="container btn btn-secondary p-4">ESPACIO</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="container btn btn-secondary p-4"><--</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/jquery_3.5.1.min.js"></script>  <!--Va primero Jquery-->
+    <script src="./js/popper_1.16.1.min.js"></script>
+    <script src="./js/bootstrap_4.5.2.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/organizador.js"></script> <!--Conectamos la hoja de js-->
+</body>
+</html>

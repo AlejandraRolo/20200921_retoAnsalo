@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Ánsalo</title>
+    <meta name="authors" content="Yazmín Alejandra Rodriguez">
+  
+    <link rel="styleSheet" href="./assets/css/bootstrap_4.5.2.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="styleSheet" href="./assets/css/index.css" type="text/css">
+</head>
+
+<body>
+    
+    <div id="contenedor-prin" class="contenedor-prin">
+        <main class="bg-main">
+            <div class="container rounded my-1 p-3">
+                <div class="row justify-content-center p-5 border-container bg-retro">
+                    <div class="col-lg-6 col-md-12 col-sm-6 d-flex flex-column mb-2">
+                        <h3 class="text-center border-inferior mb-4 pb-3">Reto Ánsalo</h3>
+                        <form id="frmRegistro">
+                            <div class="form-row">
+                                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                                    <label for="txtLetras">Letras</label>
+                                    <input id="txtLetras" type="text" class="form-control" placeholder="Digite letras A-J" readonly>
+                                    <span id="mensajeLetras" class="mensajeAlerta"></span>
+                                </div>
+                                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                                    <label for="txtNumeros">Números</label>
+                                    <input id="txtNumeros" type="number" class="form-control" placeholder="Digite números 1-0" readonly>
+                                    <span id="mensajeNumeros" class="mensajeAlerta"></span>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="container border p-3 mb-3">
+                            <div class="row">
+                                <div class="col-12 text-right">
+                                    <div class="custom-control custom-switch">
+                                        <input id="temaRetro" type="checkbox" class="custom-control-input">
+                                        <label class="custom-control-label mr-3" for="temaRetro">ACTIVAR TEMA RETRO</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 text-right">
+                                    <div class="custom-control custom-switch">
+                                        <input id="temaOscuro" type="checkbox" class="custom-control-input">
+                                        <label class="custom-control-label" for="temaOscuro">ACTIVAR TEMA OSCURO</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="botones" class="container btn-redondo">
+                            <div class="row m-2">
+                                <div class="col-4 text-center"><button>A-1</button></div>
+                                <div class="col-4 text-center"><button>B-2</button></div>
+                                <div class="col-4 text-center"><button>C-3</button></div>
+                            </div>
+                            <div class="row m-2">
+                                <div class="col-4 text-center"><button>D-4</button></div>
+                                <div class="col-4 text-center"><button>E-5</button></div>
+                                <div class="col-4 text-center"><button>F-6</button></div>
+                            </div>
+                            <div class="row m-2">
+                                <div class="col-4 text-center"><button>G-7</button></div>
+                                <div class="col-4 text-center"><button>H-8</button></div>
+                                <div class="col-4 text-center"><button>I-9</button></div>
+                            </div>
+                            <div class="row m-2">
+                                <div class="col-4 text-center"><button></button></div>
+                                <div class="col-4 text-center"><button>J-0</button></div>
+                                <div class="col-4 text-center"><button id="btnReset" >reset</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="py-3 bg-footer">
+            <div class="footer-copyright text-center py-3">© 2020 Autor: <b>Yazmín Alejandra Rodríguez López</b></div>
+        </footer>
+    </div>
+
+    <script src="./assets/js/jquery_3.5.1.min.js"></script>  <!--Va primero Jquery-->
+    <script src="./assets/js/popper_1.16.1.min.js"></script>
+    <script src="./assets/js/bootstrap_4.5.2.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./assets/js/index.js"></script> <!--Conectamos la hoja de js-->
+    <script src="./assets/js/utilidades.js"></script>
+</body>
+</html>
